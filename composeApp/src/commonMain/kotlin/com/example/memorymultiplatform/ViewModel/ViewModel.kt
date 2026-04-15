@@ -1,0 +1,15 @@
+package com.example.memorymultiplatform.ViewModel
+
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
+import androidx.lifecycle.ViewModel
+
+class Screen1ViewModel: ViewModel() {
+    var showMessage by mutableStateOf(false)
+        private set
+
+    fun modifyShowMessage(){
+        showMessage = !showMessage
+    }
+}
